@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextWave Digital Solutions</title>
+    
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css" />
+    
+    
+    <header class="slide-in-left">
+        <h1>NextWave Digital Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="slide-in-right">
+        <h2>Innovative Digital Solutions for Your Business</h2>
+        <p>Specializing in Graphic Design, Web Development, and Cybersecurity.</p>
+        <button onclick="contactUs()">Get a Free Quote</button>
+    </section>
+
+    <section id="about" class="slide-in-left">
+        <h2>About Us</h2>
+        <div class="ceo-profile">
+            <img src="your-photo.jpg" alt="CEO of NextWave Digital" class="ceo-photo">
+            <div class="ceo-info">
+                <h3>Olatunde Jeremiah</h3>
+                <p>CEO & Founder</p>
+                <p>Welcome to NextWave Digital Solutions, where we provide innovative digital solutions to elevate your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="slide-in-right">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Graphic Design</li>
+            <li>Web Development</li>
+            <li>Software Development</li>
+            <li>Data Science</li>
+            <li>Cybersecurity</li>
+        </ul>
+    </section>
+
+    <section id="portfolio" class="slide-in-left">
+        <h2>Portfolio</h2>
+        <p>Showcase of our work will go here.</p>
+    </section>
+
+    <section id="contact" class="slide-in-right">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="send_message.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="slide-in-left">
+        <p>&copy; 2024 NextWave Digital Solutions</p>
+        <p><i>Click to Connect with us:</i></p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/olatunde-jeremiah-51b364270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="linkedin.jpg" alt="LinkedIn" width="80px" />
+            </a>
+            <a href="https://www.instagram.com/jeremiaholatunde2?igsh=cnpoaDY3ZzU5OXB6" target="_blank">
+                <img src="Instagram.jpg" alt="Instagram" width="80px" />
+            </a>
+            <a href="https://www.threads.net/@jeremiaholatunde2?xmt=AQGzDlAbm0cdHX1y23UjboDD_CXsdiUFu5EUhExbi6r49tM" target="_blank">
+                <img src="thread.jpg" alt="Threads"  width="77px"/>
+            </a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    
+    
+</body>
+</html>
