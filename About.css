@@ -1,0 +1,102 @@
+/* About Page Specific Styles */
+#about {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.ceo-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.ceo-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 200px; /* Adjusted width to a more reasonable size */
+    height: 200px; /* Maintain aspect ratio */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+    border: 2px solid #fff; /* Optional: white border for contrast */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 150px; /* Adjust size for smaller screens */
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 100px; /* Further adjust size for very small screens */
+        height: 100px;
+    }
+}
+
+.ceo-info {
+    max-width: 600px;
+    text-align: center;
+}
+
+.ceo-info h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.ceo-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    #about h2 {
+        font-size: 2em;
+    }
+
+    .ceo-info h3 {
+        font-size: 1.8em;
+    }
+
+    .ceo-info p {
+        font-size: 1em;
+    }
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    vertical-align: middle;
+}

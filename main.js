@@ -1,24 +1,27 @@
-// JavaScript for Animations
-
 document.addEventListener("DOMContentLoaded", function() {
-    // Adding a class to trigger CSS animations when the page loads
+    console.log("DOM fully loaded and parsed");
+
     setTimeout(function() {
         document.body.classList.add('loaded');
     }, 100);
-});
 
-// JavaScript for Form Validation
+    var contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        console.log("Contact form found");
+        contactForm.addEventListener('submit', function(event) {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
-
-    if (name === '' || email === '' || message === '') {
-        alert('Please fill in all fields.');
-        event.preventDefault(); // Prevents form submission
+            if (name === '' || email === '' || message === '') {
+                alert('Please fill in all fields.');
+                event.preventDefault(); // Prevents form submission
+            } else {
+                alert('Your message has been sent successfully!');
+            }
+        });
     } else {
-        alert('Your message has been sent successfully!');
+        console.error('Contact form element not found!');
     }
 });
 
