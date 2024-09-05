@@ -3,21 +3,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setTimeout(function() {
         document.body.classList.add('loaded');
-    }, 100);
+    }, 500); // Increased delay to 500ms
 
     var contactForm = document.getElementById('contact-form');
     if (contactForm) {
         console.log("Contact form found");
         contactForm.addEventListener('submit', function(event) {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
-
-            if (name === '' || email === '' || message === '') {
-                alert('Please fill in all fields.');
-                event.preventDefault(); // Prevents form submission
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var message = document.getElementById('message').value.trim();
+            
+            var errorMessage = document.getElementById('error-message');
+            if (!name || !email || !message) {
+                errorMessage.textContent = 'Please fill in all fields.';
+                errorMessage.style.color = 'red';
+                event.preventDefault();
             } else {
-                alert('Your message has been sent successfully!');
+                errorMessage.textContent = 'Your message has been sent successfully!';
+                errorMessage.style.color = 'green';
             }
         });
     } else {
@@ -25,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// JavaScript for Button Action
 function contactUs() {
     alert("Thank you for your interest! Please fill out the contact form below.");
 }
