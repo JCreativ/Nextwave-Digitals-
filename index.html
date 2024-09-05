@@ -3,70 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextWave Digital Solutions</title>
+    <title>Home - NextWave Digital Solutions</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Mobile-specific Styles */
-        @media only screen and (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-
-            nav ul li a {
-                font-size: 18px;
-                padding: 10px 15px;
-            }
-
-            #home h2 {
-                font-size: 1.8em;
-            }
-
-            #home p {
-                font-size: 1em;
-                padding: 0 10px;
-            }
-
-            #home button {
-                font-size: 18px;
-                padding: 10px 20px;
-            }
-
-            footer {
-                padding: 15px;
-            }
-
-            .social-media {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-
-            .social-media a {
-                margin: 5px;
-            }
-
-            .social-media img {
-                width: 60px; /* Adjusted size for mobile */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="home.css">
 </head>
-
 <body>
     <header>
         <h1>NextWave Digital Solutions</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li> <!-- Updated Home link to point to index.html -->
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -81,17 +27,48 @@
         <button onclick="contactUs()">Get a Free Quote</button>
     </section>
 
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature">
+            <h3>Cutting-Edge Technology</h3>
+            <p>Utilizing the latest technology to deliver innovative solutions.</p>
+        </div>
+        <div class="feature">
+            <h3>Expert Team</h3>
+            <p>Our team of experts ensures top-notch quality and service.</p>
+        </div>
+        <div class="feature">
+            <h3>Customer Support</h3>
+            <p>24/7 support to assist you with any issues or queries.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"NextWave Digital Solutions transformed our online presence. Highly recommended!"</p>
+            <span>- Alex Johnson, CEO</span>
+        </div>
+        <div class="testimonial">
+            <p>"Professional and efficient. The team delivered beyond our expectations."</p>
+            <span>- Emily Davis, Marketing Director</span>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 NextWave Digital Solutions</p>
+        <p><i>Click to Connect with us:</i></p>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/olatunde-jeremiah-51b364270" target="_blank">
-                <img src="linkedin.jpg" alt="LinkedIn">
+            <a href="https://www.linkedin.com/in/olatunde-jeremiah-51b364270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="linkedin.jpg" alt="LinkedIn" width="80px" />
             </a>
-            <a href="https://www.instagram.com/ceo_nextwave_digitals" target="_blank">
-                <img src="Instagram.jpg" alt="Instagram">
+            <a href="https://www.instagram.com/ceo_nextwave_digitals?igsh=dDhmOHZ2bWcyZGFw" target="_blank">
+                <img src="instagram.jpg" alt="Instagram" width="80px" />
             </a>
-            <a href="https://www.threads.net/@ceo_nextwave_digitals" target="_blank">
-                <img src="thread.jpg" alt="Threads">
+            <a href="https://www.threads.net/@ceo_nextwave_digitals?invite=1" target="_blank">
+                <img src="thread.jpg" alt="Threads" width="77px"/>
             </a>
         </div>
     </footer>
