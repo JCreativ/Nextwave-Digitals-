@@ -1,83 +1,64 @@
-/* Contact Page Specific Styles */
-#contact {
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 20px auto;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NextWave Digital Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>NextWave Digital Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-#contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-}
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="send_message.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br><br>
+            
+            <!-- Message div for error/success messages -->
+            <div id="error-message"></div>
+            
+            <br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+    <footer>
+        <p>&copy; 2024 NextWave Digital Solutions</p>
+        <p><i>Click to Connect with us:</i></p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/olatunde-jeremiah-51b364270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="linkedin.jpg" alt="LinkedIn" width="80px" />
+            </a>
+            <a href="https://www.instagram.com/ceo_nextwave_digitals?igsh=dDhmOHZ2bWcyZGFw" target="_blank">
+                <img src="instagram.jpg" alt="Instagram" width="80px" />
+            </a>
+            <a href="https://www.threads.net/@ceo_nextwave_digitals?invite=1" target="_blank">
+                <img src="thread.jpg" alt="Threads" width="77px"/>
+            </a>
+        </div>
+    </footer>
 
-#contact-form label {
-    font-size: 1.1em;
-}
-
-#contact-form input, #contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-#contact-form textarea {
-    resize: vertical;
-    height: 150px;
-}
-
-#contact-form button {
-    background-color: #007FFF;
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-}
-
-#contact-form button:hover {
-    background-color: #005bb5;
-}
-
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
-    #contact h2 {
-        font-size: 2em;
-    }
-
-    #contact-form button {
-        font-size: 1em;
-        padding: 10px;
-    }
-}
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer .social-media {
-    margin-top: 10px;
-}
-
-footer .social-media a {
-    margin: 0 10px;
-}
-
-footer .social-media img {
-    vertical-align: middle;
-}
+    <script src="main.js"></script>
+</body>
+</html>
 
